@@ -28,6 +28,12 @@ function calculateTip() {
     document.getElementById("tip").innerHTML = total;
 };
 
+// format billamt input using Cleave
+// var cleave = new Cleave(".input-1", {
+//     numeral: true,
+//     numeralThousandsGroupStyle: 'thousand'
+// });
+
 // hide tip amount on load
 document.getElementById("totalTip").style.display = "none";
 document.getElementById("each").style.display = "none";

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/hannah-saurusrex/starter-file#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "cleave.js": "^1.5.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "normalize.css": "^8.0.1"
