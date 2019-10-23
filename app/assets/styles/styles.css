@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(to left, #E66C1B, #FED697);
   }
   
   #container {
@@ -8,7 +7,7 @@ body {
     width: 360px;
     margin: 100px auto;
     background: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
   }
   
@@ -99,15 +98,17 @@ body {
   }
   
   #totalTip:before {
-    content: "Tip amount";
+    content: "Tip amount $ ";
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
   }
-  
-  #totalTip sup {
-    font-size: 20px;
-    top: -18px;
+
+  #total:before {
+      content: "Total bill $ ";
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
   }
   
   #totalTip small {
@@ -115,3 +116,25 @@ body {
     font-weight: bold;
     display: inline-block;
   }
+
+
+  .gold {
+      background: green;
+      transition: ease-in .75s;
+  }
+
+  .silver {
+      background: #6C7A86;
+      transition: ease-in .75s;
+  }
+
+  .bronze {
+      background: orange;
+      transition: ease-in .75s;
+  }
+
+  .grey {
+      background: red;
+      transition: ease-in .75s;
+  }
+

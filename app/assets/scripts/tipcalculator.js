@@ -23,20 +23,42 @@ function calculateTip() {
     total = Math.round(total * 100) / 100;
     // always keep two digits after decimal
     total = total.toFixed(2);
-    // display the tip
+    // display the tip amount
     document.getElementById("totalTip").style.display = "block";
+
+    // calculate total bill amount
+    var totalBill = parseFloat(billAmt) + parseFloat(total);
+    totalBill = Math.round(totalBill * 100) / 100;
+    totalBill = totalBill.toFixed(2);
+    document.getElementById("total").innerHTML = totalBill;
     document.getElementById("tip").innerHTML = total;
 };
-
-// format billamt input using Cleave
-// var cleave = new Cleave(".input-1", {
-//     numeral: true,
-//     numeralThousandsGroupStyle: 'thousand'
-// });
 
 // hide tip amount on load
 document.getElementById("totalTip").style.display = "none";
 document.getElementById("each").style.display = "none";
+
+// change color scheme on tip amount
+function getSelectedValue() {
+    var selectedValue = document.getElementById("serviceQual").value;
+    
+    if (selectedValue === "0.3") {
+        document.getElementById("headline").classList.add("gold");
+    } else {
+        if (selectedValue === "0.2") {
+            document.getElementById("headline").classList.add("silver");
+        } else {
+            if (selectedValue === "0.1") {
+                document.getElementById("headline").classList.add("bronze");
+            } else {
+                if (selectedValue === "0.05") {
+                    document.getElementById("headline").classList.add("grey");
+                }
+            }
+        }
+    }
+}
+
 
 // click to call function
 document.getElementById("calculate").onclick = function() {
