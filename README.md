@@ -7,3 +7,5 @@
 # - run gulp watch
 # this will automatically open a browser window displaying the project for you to use and interact with.
 # you can also drag the index.html file into a browser window
+
+# you can also view this site live, at https://serene-boyd-2ccd8d.netlify.com/
