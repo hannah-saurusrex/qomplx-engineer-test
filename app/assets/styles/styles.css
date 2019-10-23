@@ -118,14 +118,6 @@ body {
     display: inline-block;
   }
 
-  .footer {
-    height: 525px;
-    width: 360px;
-    text-align: center;
-    
-  }
-
-
   .outstanding {
       background: linear-gradient(to right, green, white);
       transition: ease-in-out .5s;

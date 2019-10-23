@@ -10,7 +10,7 @@ function calculateTip() {
     return;
     }
     
-    // check to see if this input is empty, or <= 1
+    // check to see if people input is empty, or <= 1
     if (numOfPeople === "" || numOfPeople <= 1) {
         numOfPeople = 1;
         document.getElementById("each").style.display = "none";
@@ -22,7 +22,7 @@ function calculateTip() {
     var total = (billAmt * serviceQual) / numOfPeople;
     // round to two decimal places
     total = Math.round(total * 100) / 100;
-    // always keep two digits after decimal
+    // keep two digits after decimal
     total = total.toFixed(2);
     // display the tip amount
     document.getElementById("totalTip").style.display = "block";
@@ -39,7 +39,7 @@ function calculateTip() {
 document.getElementById("totalTip").style.display = "none";
 document.getElementById("each").style.display = "none";
 
-// change color scheme on tip amount
+// change color scheme based on tip amount
 function getSelectedValue() {
     var selectedValue = document.getElementById("serviceQual").value;
     
