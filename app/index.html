@@ -11,45 +11,49 @@
 <body>
     <div id="container">
         <h1 id="headline">Tip Calculator</h1>
-    
-        <div id="calculator">
-          
-          
-         <form>
-           <p>How much was your bill?</p>
-           <p>$
-           <input id="billamt" type="text" class="input-1" placeholder="Total bill amount"/></p>
-              
-            <p>How was your service?
-                <form>
-                    <select id="serviceQual" onchange="getSelectedValue();">
-                        <option disable selected value="0">--Choose an option--</option>
-                        <option id="serviceQual--gold" value="0.3">30% Outstanding</option>
-                        <option id="serviceQual--silver" value="0.2">20% Great</option>
-                        <option id="serviceQual--bronze" value="0.1">10% It was Ok</option>
-                        <option id="serviceQual--grey" value="0.05">5% Terrible</option>
-                    </select>
-                </form>
-            </p>
-         </form>
-          
-          <p>How many people are sharing the bill?</p>
-          <input id="peopleamt" type="text" placeholder="Number of people"/>people
-          <button id="calculate" type="button">Calculate tip</button>
+
+        <div id="large-container">
+            <div id="calculator">
+
+
+                    <form>
+                        <p>How much was your bill?</p>
+                        <p>$
+                        <input id="billamt" type="text" class="input-1" placeholder="Total bill amount"/></p>
+                            
+                        <p>How was your service?
+                            <form>
+                                <select id="serviceQual" onchange="getSelectedValue();">
+                                    <option disable selected value="0">--Choose an option--</option>
+                                    <option value="0.3">30% Outstanding</option>
+                                    <option value="0.2">20% Great</option>
+                                    <option value="0.1">10% It was Ok</option>
+                                    <option value="0.05">5% Terrible</option>
+                                </select>
+                            </form>
+                        </p>
+                    </form>
+                        
+                        <p>How many people are sharing the bill?</p>
+                        <input id="peopleamt" type="text" placeholder="Number of people"/>people
+                        <button id="calculate" type="button">Calculate tip</button>
+                                
+            
+                    <!--end calculator-->
                     
+                    <div id="totalTip">
+                        <span id="tip">0.00</span>
+                        <small id="each">each</small>
+                        <br><span id="total">0.00</span>
+                        
+                    </div>
+                    <!--end total tip-->
+                </div>
+            </div>
+                    <!--end container-->
         </div>
-      <!--end calculator-->
         
-        <div id="totalTip">
-          <span id="tip">0.00</span>
-          <small id="each">each</small>
-          <br><span id="total">0.00</span>
-          
-        </div>
-      <!--end total tip-->
         
-      </div>
-      <!--end container-->
       <script type="text/javascript" src="./assets/scripts/cleave.js"></script>
       <script type="text/javascript" src="./assets/scripts/tipcalculator.js"></script>
 </body>

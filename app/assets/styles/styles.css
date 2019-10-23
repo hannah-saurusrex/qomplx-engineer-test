@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to left, #E66C1B, #FED697);
   }
   
   #container {
@@ -12,7 +13,7 @@ body {
   }
   
   h1 {
-    background: #FED697;
+    background: #eee0e0;
     color: black;
     letter-spacing: .12rem;
     margin: 0;
@@ -117,24 +118,35 @@ body {
     display: inline-block;
   }
 
-
-  .gold {
-      background: green;
-      transition: ease-in .75s;
+  .footer {
+    height: 525px;
+    width: 360px;
+    text-align: center;
+    
   }
 
-  .silver {
-      background: #6C7A86;
-      transition: ease-in .75s;
+
+  .outstanding {
+      background: linear-gradient(to right, green, white);
+      transition: ease-in-out .5s;
+      transform: rotate(360deg);
   }
 
-  .bronze {
-      background: orange;
-      transition: ease-in .75s;
+  .great {
+      background: linear-gradient(to right, yellow, white);
+      transition: ease-in-out .5s;
+      transform: rotate(360deg);
   }
 
-  .grey {
-      background: red;
-      transition: ease-in .75s;
+  .okay {
+      background: linear-gradient(to right, orange, white);
+      transition: ease-in-out .5s;
+      transform: rotate(360deg);
+  }
+
+  .terrible {
+      background: linear-gradient(to right, red, white);
+      transition: ease-in-out .5s;
+      transform: rotate(360deg);
   }
 

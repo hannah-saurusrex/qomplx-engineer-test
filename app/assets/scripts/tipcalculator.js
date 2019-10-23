@@ -2,10 +2,11 @@ function calculateTip() {
     var billAmt = document.getElementById("billamt").value;
     var serviceQual = document.getElementById("serviceQual").value;
     var numOfPeople = document.getElementById("peopleamt").value;
+    
 
     //validate input
     if (billAmt === "" || serviceQual == 0) {
-    alert("please enter values");
+    alert("please enter values to calculate tip");
     return;
     }
     
@@ -43,16 +44,16 @@ function getSelectedValue() {
     var selectedValue = document.getElementById("serviceQual").value;
     
     if (selectedValue === "0.3") {
-        document.getElementById("headline").classList.add("gold");
+        document.getElementById("large-container").classList.add("outstanding");
     } else {
         if (selectedValue === "0.2") {
-            document.getElementById("headline").classList.add("silver");
+            document.getElementById("large-container").classList.add("great");
         } else {
             if (selectedValue === "0.1") {
-                document.getElementById("headline").classList.add("bronze");
+                document.getElementById("large-container").classList.add("okay");
             } else {
                 if (selectedValue === "0.05") {
-                    document.getElementById("headline").classList.add("grey");
+                    document.getElementById("large-container").classList.add("terrible");
                 }
             }
         }
